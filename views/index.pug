@@ -1,0 +1,30 @@
+extend layout
+
+include mixins/body-mixins
+
+
+
+block mail-phone
+  a(href="tel:781-781-8050").contact-btn.btn.btn-default
+    span.glyphicon.glyphicon-phone
+    |  781.775.8050
+  a(href="mailto:ian.cullinane@gmail.com").contact-btn.btn.btn-default
+    span.glyphicon.glyphicon-envelope
+    |  ian.cullinane@gmail.com
+
+
+block content
+  h2 This is some stuff
+  p
+    include body.txt
+
+
+block references
+  h2.references
+    | References
+  blockquote
+    p
+      | Kelly and the gang do a really super job team!
+  blockquote
+    p
+      | Additional generic quote from somebody
