@@ -2,6 +2,9 @@
 run: clean stylus build-npm
 	npm start
 
+build: copy stylus build-npm
+	npm install
+
 stylus:
 	stylus -u nib public/stylesheets/style.styl -o public/stylesheets/style.css
 

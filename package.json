@@ -14,6 +14,7 @@
     "morgan": "~1.6.1",
     "nib": "*",
     "pug": "^2.0.0-alpha6",
+    "pug-runtime": "^2.0.1",
     "request": "^2.72.0",
     "serve-favicon": "~2.3.0",
     "stylus": "0.42.3"
