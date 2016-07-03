@@ -1,5 +1,5 @@
 
-run: clean stylus build-npm
+run: clean stylus
 	npm start
 
 build: copy stylus build-npm
@@ -9,8 +9,8 @@ stylus:
 	stylus -u nib public/stylesheets/style.styl -o public/stylesheets/style.css
 
 clean:
-	rm -f public/js/include.js
-	#rm -f public/js/bundle.js
+	-rm -f public/js/include.js
+	-rm -f public/stylesheets/syle.css
 
 build-npm:
 	browserify --debug -t jadeify views/ui.js -o public/js/include.js
