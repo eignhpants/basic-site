@@ -2,7 +2,7 @@
 run: clean stylus
 	npm start
 
-build: copy stylus npm-install
+build: npm-install copy stylus
 
 npm-install:
 	npm install
