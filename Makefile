@@ -20,3 +20,5 @@ build-npm:
 copy:
 	-cp node_modules/bootstrap/dist/css/bootstrap.css public/stylesheets/bootstrap.css
 	-cp node_modules/bootstrap/fonts/* public/fonts/
+
+.PHONY: run build
