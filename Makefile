@@ -8,7 +8,7 @@ npm-install:
 	npm install
 
 stylus:
-	npm install -g nib
+	sudo npm install -g nib
 	stylus -u nib public/stylesheets/style.styl -o public/stylesheets/style.css
 
 clean:
