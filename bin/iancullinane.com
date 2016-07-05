@@ -4,7 +4,7 @@ var config = require('../CONFIG');
  * Module dependencies.
  */
 
-var app = require("../" + config.name || '../app');
+var app = require("../" + config.name || '../basic');
 var debug = require('debug')('server');
 var http = require('http');
 
