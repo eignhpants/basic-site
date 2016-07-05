@@ -8,12 +8,7 @@ config.layout = {
         name: "Ian Cullinane",
         contact: "ian.cullinane@gmail.com",
         about: "I like stuff.",
-        skills: [{
-            'Python',
-            'Javascript',
-            'HTML/CSS',
-            'Linux'
-        }]
+        skills: ['Python','Javascript','HTML/CSS','Linux']
     },
     history: [
         {
