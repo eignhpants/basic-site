@@ -1,7 +1,10 @@
 include mixins/body-mixins
 
 -var layout = config
+
 -var user = config.user
+
+
 doctype
 html
   head
@@ -26,6 +29,9 @@ html
         .row
           .col-md-12
             h1.header__title #{user.name}
+            p.header_skills I'm pretty good at Web Development, DevOps, and Cloud Engineering
+            p.header_skills I often write code in Python, JavaScript, and Java
+            p.header_skills I'm most comfortable on Linux environments
             +git_btn("git")
             .header__contact
               .header__btn.btn.btn-primary-outline
@@ -37,10 +43,6 @@ html
                 a(href="tel:781-781-8050")
                   span.glyph.glyphicon.glyphicon-phone
                   | 781.775.8050
-            each item in user.skills
-              p= item
-
-            //.header__about #{layout.about}
 
     body
       .container
