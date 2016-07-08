@@ -1,5 +1,22 @@
 extend layout
 
+block header
+    h1.header__title #{user.name}
+    p.header_skills I'm pretty good at Web Development, DevOps, and Cloud Engineering
+    p.header_skills I often write code in Python, JavaScript, and Java
+    p.header_skills I'm most comfortable on Linux environments
+    +git_btn("git")
+    .header__contact
+      .header__btn.btn.btn-primary-outline
+        span.glyph.glyphicon.glyphicon-envelope
+        a(href="mailto:ian.cullinane@gmail.com")
+          | ian.cullinane@gmail.com
+      br
+      .header__btn.btn.btn-primary-outline
+        a(href="tel:781-781-8050")
+          span.glyph.glyphicon.glyphicon-phone
+          | 781.775.8050
+
 block content
     each item in layout.history
       +history(item)
