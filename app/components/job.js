@@ -12,7 +12,7 @@ class Job extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name: props.item,
+      job: props.job,
     }
     // url (required), options (optional)
     // fetch('/timeline', {
@@ -22,8 +22,17 @@ class Job extends Component {
 
   render(){
     return (
-      <div>
-        <p>{this.state.name}</p>
+      <div className="job">
+        <h4 className="job--company">{this.state.job.company}</h4>
+        <h3 className="job--title">{this.state.job.title}</h3>
+        <h5 className="job--date">{this.state.job.date}</h5>
+        <p className="job--description">{this.state.job.description}</p>
+        <ul className="job--bullets">
+          {_.map(this.state.job.bullets, (obj, i)=>
+            <li key={i}>{obj}</li>
+          )}
+        </ul>
+
       </div>
     )
   }

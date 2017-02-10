@@ -3,7 +3,7 @@
 .box
   //float left
   background-color white
-  padding 5px
+  padding 10px
   margin 10px
   box-shadow 0 5px 7px #aaa
 
@@ -26,7 +26,7 @@
 
   @media small {width: 95%}
   @media medium {width: 90%}
-  @media large {width: 80%}
+  @media large {width: 90%}
   @media xlarge {width: 75%}
 
 
@@ -54,6 +54,51 @@
 //
 // #content
 //  flex 5 2
+
+
+
+
+
+/*
+    _____          __
+   |     \        |  \
+    \$$$$$ ______ | $$____
+      | $$/      \| $$    \
+ __   | $|  $$$$$$| $$$$$$$\
+|  \  | $| $$  | $| $$  | $$
+| $$__| $| $$__/ $| $$__/ $$
+ \$$    $$\$$    $| $$    $$
+  \$$$$$$  \$$$$$$ \$$$$$$$
+*/
+
+.timelineItem
+  margin-bottom: 20px
+
+
+
+
+.job
+  @extend .timelineItem
+
+
+.school
+  @extend .timelineItem
+
+
+
+.job--date
+  margin-bottom: 10px
+
+.school--date
+  margin-bottom: 10px
+
+.job--company
+  font-family: droid
+  font-size 1.8em
+
+.job--bullets
+  li
+    font-family console
 
 
 /*

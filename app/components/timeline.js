@@ -5,6 +5,7 @@ import moment from 'moment';
 
 import TimeLineItem from './timeline-item';
 import Job from './job';
+import School from './school';
 //
 // UI Components
 //_______________
@@ -14,7 +15,8 @@ export class Timeline extends Component {
     super(props);
     console.log(props.timeline);
     this.state = {
-      jobs: this._makeList(props.timeline.work_history),
+      jobs: this._makeJobs(props.timeline.work_history),
+      education: this._makeSchools(props.timeline.education)
     }
 
     // url (required), options (optional)
@@ -24,16 +26,35 @@ export class Timeline extends Component {
 
   }
 
-  _makeList(list){
+  _makeJobs(list){
     let temp_arr = _.map(list,(item, i)=>
-      <Job item={item.company} key={_.uniqueId("job-" + i)} />
+      <Job job={item} key={_.uniqueId("job-" + i)} />
+    );
+    return temp_arr;
+  }
+
+  _makeSchools(list){
+    let temp_arr = _.map(list,(item, i)=>
+      <School school={item} key={_.uniqueId("school-" + i)} />
     );
     return temp_arr;
   }
 
   render(){
     return (
-      <div>{this.state.jobs}</div>
+      <div>
+        <div className="box">
+          <h3>This is what I&#39;ve been up to:</h3>
+          <br />
+          {this.state.jobs}
+        </div>
+
+        <div className="box">
+          <h3>This is my education so far:</h3>
+          <br />
+          {this.state.education}
+        </div>
+      </div>
     )
   }
 }

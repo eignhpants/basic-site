@@ -10,26 +10,48 @@ config.timeline = {
         skills: ['Python','Javascript','HTML/CSS','Linux']
     },
     work_history: [
+      {
+          company: "Aligned Software",
+          title: "Software Engineer - Consultant at Turbine Games",
+          date: "June 2015 - April 2016",
+          description: "Continued building the tools I created during my internship at Turbine.",
+          bullets: [
+            "Wrote command line tooks for Linux (Debian, RHEL)",
+            "Created and deployed web based tools to automate deployments",
+            "Built and deployed services via Jenkins",
+            "Extensive use of Docker"
+          ]
+      },
         {
             company: "Turbine Games",
-            title: "Cloud Solutions & DevOps Engineer",
-            date: "June, 2015 - present",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum accumsan. Vestibulum accumsan, ipsum quis viverra porta, massa mauris eleifend nisi, sit amet cursus quam ligula in odio. Mauris eget ex eros. Vestibulum at arcu in dui rhoncus lacinia sit amet sed ex. Curabitur malesuada porta tempus. Nam id dictum augue, iaculis consequat lorem."
+            title: "Cloud Solutions & DevOps Intern",
+            date: "June 2015 - April 2016",
+            description: "Assisted in making web and system based tools for monitoring and cost reduction of an AWS Web Services cloud environment. Helped manage cloud formation and network wide maintenance scripts.",
+            bullets: [
+              "Wrote command line tooks for Linux (Debian, RHEL)",
+              "Created and deployed web based tools to automate deployments",
+              "Built and deployed services via Jenkins",
+              "Extensive use of Docker"
+            ]
         },
         {
             company: "Whole Foods Market",
             title: "Signmaker / Graphic Artist",
-            date: "August, 2009 - August, 2012",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum dictum accumsan. Vestibulum accumsan, ipsum quis viverra porta, massa mauris eleifend nisi, sit amet cursus quam ligula in odio. Mauris eget ex eros. Vestibulum at arcu in dui rhoncus lacinia sit amet sed ex. Curabitur malesuada porta tempus. Nam id dictum augue, iaculis consequat lorem."
+            date: "October, 2009 - August, 2012",
+            description: "During this time I worked as a store level signmaker/graphic artists. I created hand made displays as well as materials produced using Adobe software. ",
+            bullets: [
+              "A bullet",
+              "Another bullet"
+            ]
         },
     ],
     education: [
       {
-        school: "MassBay",
+        school: "MassBay Community College",
         date: "Fall 2012 - Fall 2015"
       },
       {
-        school: "Academy if Art University",
+        school: "Academy if Art University San Francisco",
         date: "Spring 2004 - Fall 2006"
       },
       {

@@ -20,6 +20,7 @@ var bootstrap = require('bootstrap');      // not compatible with ES6 use legacy
 // Sanity Check
 //console.log(window.location.pathname);
 import { Timeline } from './components/timeline.js';
+
 /*
 	Application variables
 */
