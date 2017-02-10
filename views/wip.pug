@@ -1,14 +1,8 @@
-include mixins/body-mixins
-
--var layout = config
-
--var user = config.user
-
 
 doctype
 html
   head
-    title #{layout.title}
+    title Ian Cullinane
     //meta(name="Costa's Cleaning" content="Residential and Commericial cleaner servincing the Boston Metro Area")
 
     link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
@@ -24,20 +18,8 @@ html
 
   body
 
-    header
-      .container
-        .row
-          .col-md-12
-            block header
-
-    body
-      .container
-        .row
-          .col-md-12
-              block content
-
-    footer
-      .container
-        .row
-          .col-md-12
-
+    .centered
+        h1 Hello
+        h2 My name is Ian Cullinane
+        h3 Right now I work at Turbine Games doing DevOps and Cloud engineering
+        h4 You can contact me at #[a(href="mailto:ian@iancullinane.com") ian@iancullinane.com]

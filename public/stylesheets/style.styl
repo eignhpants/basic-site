@@ -2,12 +2,14 @@
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,300|Quicksand')
 @import url('https://fonts.googleapis.com/css?family=Lato:900|Open+Sans:400,300,300italic')
-@import url('https://fonts.googleapis.com/css?family=Lobster')
+//@import url('https://fonts.googleapis.com/css?family=Lobster')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Work+Sans:400,200');
 
 @import 'nib'
 //@import 'mixins/strap'
 //@import 'bootstrap'
 
+roboto = 'Roboto Slab'
 quicksand = 'Quicksand'
 open-sans = 'Open Sans'
 lato = 'Lato'
@@ -111,7 +113,24 @@ background-color = #faf9f0
     margin 0 0 10px 0
 
 
+.centered
 
+  h1
+    font-family  lato
+  h2
+    font-family open-sans
+
+  h3,
+  h4
+    font-family roboto
+
+  position  absolute
+  width     600px
+  height    400px
+  left      50%
+  top       50%
+  margin-left  -300px /* half of the width  */
+  margin-top   -200px /* half of the height */
 
 
 
