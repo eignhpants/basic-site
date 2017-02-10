@@ -16,5 +16,5 @@ build-npm:
 	browserify --debug -t jadeify views/ui.js -o public/js/include.js
 
 copy:
-	cp node_modules/bootstrap/dist/css/bootstrap.css public/stylesheets/bootstrap.css
-	cp node_modules/bootstrap/fonts/* public/fonts/
+	-cp node_modules/bootstrap/dist/css/bootstrap.css public/stylesheets/bootstrap.css
+	-cp node_modules/bootstrap/fonts/* public/fonts/
