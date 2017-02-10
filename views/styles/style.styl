@@ -1,0 +1,91 @@
+@import './global.styl'
+
+.box
+  //float left
+  background-color white
+  padding 5px
+  margin 10px
+  box-shadow 0 5px 7px #aaa
+
+
+#intro
+  margin-bottom: 15px
+
+
+#main
+  @extend #intro
+  width: 80%
+  height: 100%
+  margin auto
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-direction: column
+  margin-top: 10%
+  //flex-direction: row
+
+  @media small {width: 95%}
+  @media medium {width: 90%}
+  @media large {width: 80%}
+  @media xlarge {width: 75%}
+
+
+#title
+  @extend #intro
+  align-self: flex-start
+
+#about
+  @extend #intro
+  align-self: flex-start
+
+.about__bio
+  font-size 3vw
+
+
+
+#h1
+  font-size: 10vw
+
+
+
+// #side
+//   background-color: blue
+//   flex 2 5
+//
+// #content
+//  flex 5 2
+
+
+/*
+ ________                         __
+|        \                       |  \
+ \$$$$$$$______  ______   _______| $$   __
+   | $$ /      \|      \ /       | $$  /  \
+   | $$|  $$$$$$\\$$$$$$|  $$$$$$| $$_/  $$
+   | $$| $$   \$/      $| $$     | $$   $$
+   | $$| $$    |  $$$$$$| $$_____| $$$$$$\
+   | $$| $$     \$$    $$\$$     | $$  \$$\
+    \$$ \$$      \$$$$$$$ \$$$$$$$\$$   \$$
+*/
+
+
+
+/*
+ __    __ ______
+|  \  |  |      \
+| $$  | $$\$$$$$$
+| $$  | $$ | $$
+| $$  | $$ | $$
+| $$  | $$ | $$
+| $$__/ $$_| $$_
+ \$$    $|   $$ \
+  \$$$$$$ \$$$$$$
+*/
+
+.more-btn
+  margin-bottom: 3px
+  background-color: #CF4222;
+  color white
+  font-family: roboto;
+  font-size: 20px;
+  width: 100%;

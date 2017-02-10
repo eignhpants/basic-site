@@ -1,43 +1,12 @@
-include mixins/body-mixins
-
--var layout = config
-
--var user = config.user
 
 
 doctype
 html
   head
-    title #{layout.title}
-    //meta(name="Costa's Cleaning" content="Residential and Commericial cleaner servincing the Boston Metro Area")
-
-    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
-
-    //link(rel='stylesheet', href='stylesheets/bootstrap.css')
-
-    // js imports
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
-    //script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js')
-
-    link(rel='stylesheet', href='stylesheets/style.css')
+    include includes/meta
 
   body
-
-    header
-      .container
-        .row
-          .col-md-12
-            block header
-
-    body
-      .container
-        .row
-          .col-md-12
-              block content
-
-    footer
-      .container
-        .row
-          .col-md-12
-
+    -var timeline = timeline
+    #size-check
+    block content
+    script(src='js/include.js')
