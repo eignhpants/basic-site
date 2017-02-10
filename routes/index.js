@@ -5,7 +5,7 @@ var config = require('../CONFIG');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('wip');
+  res.render('wip', {data: config.layout});
 });
 
 router.get('/admin', function(req, res, next){
