@@ -1,5 +1,5 @@
 
-run: clean stylus
+run: clean build stylus
 	npm start
 
 build: npm-install
