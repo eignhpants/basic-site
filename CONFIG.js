@@ -3,8 +3,8 @@ var config = {};
 config.name = "basic";
 config.header = "Ian Cullinane";
 config.layout = {
+    title: "Basic",
     user: {
-        title: "Basic",
         name: "Ian Cullinane",
         contact: "ian.cullinane@gmail.com",
         about: "I like stuff.",
