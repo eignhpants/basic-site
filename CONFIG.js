@@ -25,6 +25,6 @@ config.layout = {
     ]
 };
 config.default_stuff =  ['red','green','blue','apple','yellow','orange','politics'];
-config.port = process.env.DEPLOY_PORT || 3333;
+config.port = process.env.DEPLOY_PORT || 3334;
 
 module.exports = config;
