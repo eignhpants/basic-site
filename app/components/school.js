@@ -23,8 +23,9 @@ class School extends Component {
   render(){
     return (
       <div className="school">
-        <h3 className="school--title">{this.state.school.school}</h3>
-        <h4 className="school--date">{this.state.school.date}</h4>
+        <h4 className="school--title">{this.state.school.school}</h4>
+        <h3 className="school--concentration">{this.state.school.concentration}</h3>
+        <h5 className="school--date">{this.state.school.date}</h5>
       </div>
     )
   }

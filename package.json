@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-watch index.js --presets es2015,stage-2",
+    "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,11 +14,15 @@
     "express": "^4.14.0",
     "jquery": "^3.1.1",
     "moment": "^2.17.0",
+    "nib": "^1.1.2",
     "pug": "^2.0.0-beta6",
     "pugify": "^2.1.0",
     "query-string": "^4.2.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "request": "^2.79.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "whatwg-fetch": "^2.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -28,7 +32,9 @@
     "babel-preset-stage-2": "^6.18.0",
     "babel-watch": "^2.0.6",
     "babelify": "^7.3.0",
+    "browserify": "*",
     "reactjs": "^1.0.0",
+    "stylus": "^0.54.5",
     "underscore": "^1.8.3"
   }
 }

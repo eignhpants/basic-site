@@ -8,6 +8,7 @@ import pug from 'pug';
 import _ from 'underscore';
 import React    from 'react';
 import ReactDOM from 'react-dom';
+//import jspdf from 'jsPDF';
 
 /*
 	Set up window for DOM manipulation and bootstrap
@@ -35,6 +36,8 @@ if(window.location.pathname === '/'){
       index(timeline);
     });
 }
+
+
 
 
 function index(timelineFromServer){

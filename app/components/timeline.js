@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import _ from 'underscore';
 import moment from 'moment';
+import 'whatwg-fetch'; 
 
 import TimeLineItem from './timeline-item';
 import Job from './job';
@@ -43,15 +44,12 @@ export class Timeline extends Component {
   render(){
     return (
       <div>
-        <div className="box">
+        <div className="history__section">
           <h3>This is what I&#39;ve been up to:</h3>
-          <br />
           {this.state.jobs}
         </div>
-
-        <div className="box">
+        <div className="history__section">
           <h3>This is my education so far:</h3>
-          <br />
           {this.state.education}
         </div>
       </div>

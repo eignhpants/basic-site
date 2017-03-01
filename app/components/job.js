@@ -29,7 +29,7 @@ class Job extends Component {
         <p className="job--description">{this.state.job.description}</p>
         <ul className="job--bullets">
           {_.map(this.state.job.bullets, (obj, i)=>
-            <li key={i}>{obj}</li>
+            <li className="bullet--item" key={i}>{obj}</li>
           )}
         </ul>
 
