@@ -1,0 +1,215 @@
+@import './global.styl'
+
+.box
+  //float left
+  background-color white
+  padding 10px
+  margin 10px
+  box-shadow 0 5px 7px #aaa
+
+
+#intro
+  margin-bottom: 15px
+
+
+#main
+  @extend #intro
+  width: 80%
+  height: 100%
+  margin auto
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-direction: column
+  margin-top: 10%
+  //flex-direction: row
+
+  @media small {width: 95%}
+  @media medium {width: 90%}
+  @media large {width: 90%}
+  @media xlarge {width: 75%}
+  @media print
+    width 90%
+    margin-top: 2%
+
+#title
+  @extend #intro
+  align-self: flex-start
+
+  h1
+    font-size: 10vw
+    font-weight: 700
+
+  h2
+    font-family: catamaran
+    font-weight 200
+    font-size: 5vw
+
+  h3
+    font-size: 2.5vw
+
+  @media print
+    h1{ font-size: 8vw }
+    h2{ font-size: 3vw }
+    h3{ font-size: 2vw }
+
+
+#made
+  position relative
+  left -5px
+  background-color: #d3e6b1
+  border-radius: 3px
+  padding 5px
+
+  p
+    font-size: 1.6vw
+
+.made__header
+  font-size 2.5vw
+
+#about
+  @extend #intro
+  align-self: flex-start
+
+.about__bio
+  font-size 2.5vw
+  margin-bottom: 30px
+
+
+
+#h1
+  font-size: 10vw
+
+
+
+// #side
+//   background-color: blue
+//   flex 2 5
+//
+// #content
+//  flex 5 2
+
+
+
+
+
+/*
+ ________ __                       __ __
+|        |  \                     |  |  \
+ \$$$$$$$$\$$______ ____   ______ | $$\$$_______   ______
+   | $$  |  |      \    \ /      \| $|  |       \ /      \
+   | $$  | $| $$$$$$\$$$$|  $$$$$$| $| $| $$$$$$$|  $$$$$$\
+   | $$  | $| $$ | $$ | $| $$    $| $| $| $$  | $| $$    $$
+   | $$  | $| $$ | $$ | $| $$$$$$$| $| $| $$  | $| $$$$$$$$
+   | $$  | $| $$ | $$ | $$\$$     | $| $| $$  | $$\$$     \
+    \$$   \$$\$$  \$$  \$$ \$$$$$$$\$$\$$\$$   \$$ \$$$$$$$
+*/
+
+.timelineItem
+  margin-bottom: 20px
+
+  @media print { margin-bottom: 10px }
+
+/*
+  school
+
+  .school
+    h4.school--title
+    h2.school--concentration
+    h4.school--date
+*/
+
+
+.school
+  @extend .timelineItem
+
+
+
+.school--date
+  margin-bottom: 10px
+
+
+.school--concentration
+  font-family: catamaran
+
+
+//
+// History
+//___________
+
+.history__section
+  font-weight: 700
+  font-family: roboto
+  margin-bottom: 30px
+
+
+/*
+  job
+
+  .job
+    h4.job--company
+    h3.job--title
+    h5.job--date
+    .job--description
+    ul.job--bullets
+      .bullet--item
+
+
+*/
+
+
+.job
+    @extend .timelineItem
+
+.job--company
+  font-family: catamaran
+
+.job--title
+  font-weight: 700
+
+.job--date
+  margin-bottom: 10px
+
+.job--bullets
+  li
+    font-family console
+
+
+
+
+.job
+ @media print
+    .job--company
+      font-size: 1.8vw
+    .job--title
+      font-size: 2.2vw
+    .job--description
+      font-size: 1.6vw
+
+    .job--bullets
+      li
+        font-size: 1.5vw
+
+/*
+ __    __ ______
+|  \  |  |      \
+| $$  | $$\$$$$$$
+| $$  | $$ | $$
+| $$  | $$ | $$
+| $$  | $$ | $$
+| $$__/ $$_| $$_
+ \$$    $|   $$ \
+  \$$$$$$ \$$$$$$
+*/
+
+.save-btn
+  margin-bottom: 3px
+  background-color: white
+  border 1px solid black
+  font-size: 20px;
+  width: 100%;
+  margin-bottom 20px
+
+.save-btn:hover
+  background-color: black
+  color: white
